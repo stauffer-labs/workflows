@@ -42,6 +42,6 @@ Breaking changes (renamed inputs, removed steps) get a new major tag (`v2`).
 
 ## Access
 
-This repo is private. Its Actions access setting allows repos in the `stauffer-labs`
-organization to call it. GitHub does not let **public** repos call workflows in a private
-repo, so public repos either need this repo made public or their own copy of the workflow.
+This repo is public so that both public and private repos can call these workflows. It
+contains only CI configuration; keep secrets out of it and pass them from the calling
+workflow instead.
